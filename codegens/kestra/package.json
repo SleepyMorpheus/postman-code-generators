@@ -1,0 +1,35 @@
+{
+  "name": "@postman/codegen-kestra",
+  "version": "1.0.0",
+  "description": "Converts Postman SDK Requests to kestra task snipped",
+  "main": "index.js",
+  "com_postman_plugin": {
+    "type": "code_generator",
+    "lang": "kestra",
+    "variant": "Native",
+    "syntax_mode": "text"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node npm/test.js",
+    "test-lint": "node npm/test-lint.js",
+    "test-newman": "node npm/test-newman.js",
+    "test-unit": "node npm/test-unit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Andri Florin",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/SleepyMorpheus/postman-code-generators/tree/master/codegens/kestra",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "postman-collection": "^4.5.0"
+  }
+}
